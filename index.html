@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./CSS/main.min.css" />
   </head>
 
   <body>
@@ -63,7 +63,7 @@
       <!-- Переваги -->
       <section class="feature">
         <div class="feature__container container">
-          <h2 class="feature__title">Преимущества</h2>
+          <h2 class="feature__title visually-hidden">Преимущества</h2>
           <ul class="feature__list">
             <li class="feature__item">
               <div class="feature__group">
@@ -293,6 +293,7 @@
           </ul>
         </div>
       </section>
+      <!-- Клієнти -->
       <section class="clients">
         <div class="container">
           <h2 class="clients__title">Постоянные клиенты</h2>
@@ -418,7 +419,7 @@
         </div>
       </div>
     </footer>
-
+    <!-- Модальне вікно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="btn-close" type="button" data-modal-close>
@@ -460,7 +461,12 @@
           </div>
           <div class="form-checkbox-container">
             <label class="form-checkbox">
-              <input class="checkbox" type="checkbox" name="confirmation" value="yes" />
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                name="confirmation"
+                value="yes"
+              />
               <span class="modal-form-checkbox">
                 <svg class="checkbox-icon" width="16" height="15">
                   <use href="./images/icons.svg#check1"></use>
