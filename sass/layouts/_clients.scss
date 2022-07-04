@@ -23,13 +23,13 @@
   }
 }
 
-.clients__link:hover .clients__icons,
-.clients__link:focus .clients__icons {
-  fill: var(--acceent-color);
-}
-
 .clients__icons {
   fill: #afb1b8;
 
   transition: fill var(--anim);
+
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: var(--acceent-color);
+  }
 }
