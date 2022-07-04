@@ -232,11 +232,8 @@ img {
 
 .socialnetworks__icon {
   fill: #afb1b8;
-  /* color: currentColor; */
 }
-
-.socialnetworks__link:hover .socialnetworks__icon,
-.socialnetworks__link:focus .socialnetworks__icon {
+.socialnetworks__link:hover .socialnetworks__icon, .socialnetworks__link:focus .socialnetworks__icon {
   fill: var(--secondary-text-color);
 }
 
@@ -364,7 +361,6 @@ img {
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/index/img-hero.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index/img-hero.jpg);
-  /* background-image: url(../images/index/img-hero.jpg); */
   background-position: center;
 }
 
@@ -528,15 +524,13 @@ img {
   border: 1px solid var(--acceent-color);
 }
 
-.clients__link:hover .clients__icons,
-.clients__link:focus .clients__icons {
-  fill: var(--acceent-color);
-}
-
 .clients__icons {
   fill: #afb1b8;
   -webkit-transition: fill var(--anim);
   transition: fill var(--anim);
+}
+.clients__link:hover .clients__icons, .clients__link:focus .clients__icons {
+  fill: var(--acceent-color);
 }
 
 /* footer */
@@ -719,9 +713,7 @@ img {
   -webkit-transition: fill var(--anim);
   transition: fill var(--anim);
 }
-
-.btn-close:hover .close-icon,
-.btn-close:focus .close-icon {
+.btn-close:hover .close-icon, .btn-close:focus .close-icon {
   fill: var(--acceent-color);
 }
 
@@ -761,6 +753,9 @@ img {
   transition: border var(--anim);
   padding-left: 35px;
 }
+.form-field-input:focus ~ .form-icon {
+  fill: var(--acceent-color);
+}
 .form-field-input:focus {
   border: 1px solid var(--acceent-color);
 }
@@ -795,10 +790,6 @@ img {
   letter-spacing: 0.01em;
 }
 
-.form-field-input:focus ~ .form-icon {
-  fill: var(--acceent-color);
-}
-
 .form-checkbox {
   display: block;
   margin-top: 20px;
@@ -808,15 +799,6 @@ img {
   fill: transparent;
   -webkit-transition: fill var(--anim);
   transition: fill var(--anim);
-}
-
-.checkbox:checked + .modal-form-checkbox > .checkbox-icon {
-  fill: var(--secondary-text-color);
-}
-
-.checkbox:checked + .modal-form-checkbox {
-  background-color: var(--acceent-color);
-  border: transparent;
 }
 
 .modal-form-checkbox {
@@ -834,6 +816,13 @@ img {
   border: 1px solid var(--title-text-color);
   border-radius: 2px;
   margin-right: 8px;
+}
+.checkbox:checked + .modal-form-checkbox > .checkbox-icon {
+  fill: var(--secondary-text-color);
+}
+.checkbox:checked + .modal-form-checkbox {
+  background-color: var(--acceent-color);
+  border: transparent;
 }
 
 .checkbox-text {
@@ -916,9 +905,7 @@ img {
   -ms-flex-preferred-size: calc((100% - 60px) / 3);
       flex-basis: calc((100% - 60px) / 3);
 }
-
-.portfolio-img-item:hover .overlay-img::before,
-.portfolio-img-item:focus .overlay-img::before {
+.portfolio-img-item:hover .overlay-img::before, .portfolio-img-item:focus .overlay-img::before {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
@@ -962,7 +949,6 @@ img {
   transition: transform var(--anim);
   transition: transform var(--anim), -webkit-transform var(--anim);
 }
-
 .portfolio-link:hover .portfolio-link-p {
   -webkit-transform: translateY(0);
           transform: translateY(0);
